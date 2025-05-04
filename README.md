@@ -31,7 +31,7 @@ bxxx -b 8 0xdeadbeef  # Output: \xef\xbe\xad\xde\x00\x00\x00\x00
 ```
 # Keep null bytes
 ```bash
-bxxx -k 0x1234  # Output: \x34\x12\x00\x00
+bxxx -k 0x1234  # Output: \x34\x12
 ```
 # View full documentation
 ```bash
