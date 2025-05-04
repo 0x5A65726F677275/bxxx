@@ -36,7 +36,7 @@ bxxx -k 0x1234  # Output: \x34\x12\x00\x00
 ```bash
 man bxxx
 ```
-##Why bxxx? 🤔
+## Why bxxx? 🤔
 Perfect for exploit development and binary analysis
 
 Essential tool for CTF players and security researchers
