@@ -1,5 +1,5 @@
 # Byte Sequence Generator (bxxx) 🛠️
-###![image](https://github.com/user-attachments/assets/bf93ae60-ea91-443d-8153-59765052fb83)
+![image](https://github.com/user-attachments/assets/bf93ae60-ea91-443d-8153-59765052fb83)
 
 ![License](https://img.shields.io/badge/License-BSD-blue)
 ![Python](https://img.shields.io/badge/Python-3.6+-blue)
