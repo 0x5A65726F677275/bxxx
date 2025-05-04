@@ -58,17 +58,3 @@ API reference
 Pull requests welcome! Please see our contribution guidelines.
 
 Developed with ❤️ by Art of Vector
-
-
-This GitHub cover includes:
-
-1. **Badges** - For quick visual recognition of license, Python version, and platform support
-2. **Features** - Highlighted with emojis for better readability
-3. **One-line install** - Easy copy-paste installation command
-4. **Usage examples** - Common scenarios to get started quickly
-5. **Why section** - Explains the tool's value proposition
-6. **Documentation links** - Pointers to more detailed docs
-7. **Contributing** - Encourages community involvement
-8. **Clean footer** - With developer credit
-
-The design follows modern GitHub repository standards while keeping it visually appealing and informative. You can place this at the top of your README.md file.
