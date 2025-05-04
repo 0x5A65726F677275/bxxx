@@ -18,21 +18,25 @@
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/artofvector/bxxx/main/install.sh | sudo bash
-
-Usage Examples 💡
+```
+##Usage Examples 💡
 # Basic conversion
+```bash
 bxxx 0x414243  # Output: \x41\x42\x43
-
+```
 # Fixed length conversion
+```bash
 bxxx -b 8 0xdeadbeef  # Output: \xef\xbe\xad\xde\x00\x00\x00\x00
-
+```
 # Keep null bytes
+```bash
 bxxx -k 0x1234  # Output: \x34\x12\x00\x00
-
+```
 # View full documentation
+```bash
 man bxxx
-
-Why bxxx? 🤔
+```
+##Why bxxx? 🤔
 Perfect for exploit development and binary analysis
 
 Essential tool for CTF players and security researchers
@@ -41,7 +45,7 @@ Lightweight (only 3KB installed) with zero dependencies
 
 Works in resource-constrained environments
 
-Documentation 📖
+##Documentation 📖
 Full documentation available in:
 
 Man pages (man bxxx)
@@ -50,7 +54,7 @@ Example usage
 
 API reference
 
-Contributing 🤝
+##Contributing 🤝
 Pull requests welcome! Please see our contribution guidelines.
 
 Developed with ❤️ by Art of Vector
