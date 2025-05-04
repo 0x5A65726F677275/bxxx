@@ -45,15 +45,6 @@ Lightweight (only 3KB installed) with zero dependencies
 
 Works in resource-constrained environments
 
-## Documentation 📖
-Full documentation available in:
-
-Man pages (man bxxx)
-
-Example usage
-
-API reference
-
 ## Contributing 🤝
 Pull requests welcome! Please see our contribution guidelines.
 
