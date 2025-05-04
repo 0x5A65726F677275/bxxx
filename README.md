@@ -17,9 +17,10 @@
 ## Quick Install 🚀
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/artofvector/bxxx/main/install.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/0x5A65726F677275/bxxx/main/install.sh | sudo bash
 ```
-##Usage Examples 💡
+
+## Usage Examples 💡
 # Basic conversion
 ```bash
 bxxx 0x414243  # Output: \x41\x42\x43
