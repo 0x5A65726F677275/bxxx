@@ -1,14 +1,33 @@
-# Create the necessary directories
-sudo mkdir -p /usr/local/bin /usr/local/share/bxxx
+#!/bin/bash
+# bxxx installer - Art of Vector
+# Installs byte sequence generator tool system-wide
 
-# Create the script file with proper permissions
-sudo tee /usr/local/bin/bxxx >/dev/null <<'EOF'
+set -e
+
+VERSION="1.0"
+INSTALL_DIR="/usr/local/bin"
+MAN_DIR="/usr/local/share/man/man1"
+DOC_DIR="/usr/local/share/doc/bxxx"
+
+# Check if running as root
+if [ "$(id -u)" -ne 0 ]; then
+    echo "Please run as root or use sudo"
+    exit 1
+fi
+
+# Create installation directories
+echo "Creating directories..."
+mkdir -p "${INSTALL_DIR}" "${MAN_DIR}" "${DOC_DIR}"
+
+# Install main script
+echo "Installing bxxx tool..."
+cat > "${INSTALL_DIR}/bxxx" << 'EOF'
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """
-Copyright (c) 2024 Art of Vector
-Byte Sequence Generator Tool
+Byte Sequence Generator - Art of Vector
+Version 1.0
 """
 
 import argparse
@@ -60,12 +79,13 @@ if __name__ == "__main__":
     main()
 EOF
 
-# Make the script executable
-sudo chmod +x /usr/local/bin/bxxx
+# Set permissions
+chmod 755 "${INSTALL_DIR}/bxxx"
 
-# Create a man page
-sudo tee /usr/local/share/man/man1/bxxx.1 >/dev/null <<'EOF'
-.TH BXXX 1 "2024-03-20" "Art of Vector" "Byte Sequence Generator"
+# Install man page
+echo "Installing documentation..."
+cat > "${MAN_DIR}/bxxx.1" << 'EOF'
+.TH BXXX 1 "2024-03-20" "1.0" "Byte Sequence Generator"
 .SH NAME
 bxxx \- Convert addresses to byte sequences
 .SH SYNOPSIS
@@ -98,5 +118,29 @@ Art of Vector
 Copyright © 2024 Art of Vector. License BSD.
 EOF
 
-# Update man page database
-sudo mandb
+# Install examples and docs
+cat > "${DOC_DIR}/examples.txt" << 'EOF'
+Basic Examples:
+1. Convert hex value:
+   bxxx 0x414243
+
+2. Convert with fixed length (4 bytes):
+   bxxx -b 4 0x1234
+
+3. Keep null bytes in output:
+   bxxx -k 0x1234
+
+4. Use in shell scripts:
+   #!/bin/bash
+   BYTES=$(bxxx 0xdeadbeef)
+   echo "Bytes: $BYTES"
+EOF
+
+# Update man database
+echo "Updating manual database..."
+mandb >/dev/null 2>&1
+
+echo ""
+echo "bxxx ${VERSION} installed successfully to ${INSTALL_DIR}"
+echo "Try it with: bxxx 0x414243"
+echo "View manual with: man bxxx"
