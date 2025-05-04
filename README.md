@@ -45,7 +45,7 @@ Lightweight (only 3KB installed) with zero dependencies
 
 Works in resource-constrained environments
 
-##Documentation 📖
+## Documentation 📖
 Full documentation available in:
 
 Man pages (man bxxx)
@@ -54,7 +54,7 @@ Example usage
 
 API reference
 
-##Contributing 🤝
+## Contributing 🤝
 Pull requests welcome! Please see our contribution guidelines.
 
 Developed with ❤️ by Art of Vector
