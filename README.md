@@ -1,4 +1,4 @@
-# Byte Sequence Generator (bxxx) 🛠️
+# Byte Sequence Generator (bxxx) 1.1v 🛠️
 ![image](https://github.com/user-attachments/assets/4d5cb8f0-4776-4afb-925a-16e80592cafe)
 
 ![License](https://img.shields.io/badge/License-BSD-blue)
