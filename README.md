@@ -1,5 +1,5 @@
 # Byte Sequence Generator (bxxx) 1.1v 🛠️
-![image](https://lh3.googleusercontent.com/gg-dl/AJfQ9KS5PXPQNU5QNb1bneCP1mP724_aPVfqlvpVI6rtqA61A2C3G4k30q71M9dQqIJt0l_jUM2_0rof6tgSO8R5IGgOOCvevXWX2RtbYDUfnuaHj-l968u8BQt9Wt5Y3OeJzXD1xglqCFHUsSmjCIyPjOs-fVi8cbKif2wrlOxmFeSZYuVVKw=s1024)
+![Banner](image/1.1v.png)
 
 ![License](https://img.shields.io/badge/License-BSD-blue)
 ![Python](https://img.shields.io/badge/Python-3.6+-blue)
