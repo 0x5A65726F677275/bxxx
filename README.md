@@ -33,6 +33,12 @@ bxxx -b 8 0xdeadbeef  # Output: \xef\xbe\xad\xde\x00\x00\x00\x00
 ```bash
 bxxx -k 0x1234  # Output: \x34\x12
 ```
+# Added multiple output formats (--hex, --dec, --oct, --char)
+'''bash
+bxxx --char 0x48656c6c6f    # Outputs "Hello"
+bxxx --dec 0xff             # Shows "255"
+bxxx --oct 0x41             # Displays "101"
+'''
 # View full documentation
 ```bash
 man bxxx
