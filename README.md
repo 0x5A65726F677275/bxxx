@@ -23,14 +23,25 @@ curl -sSL https://raw.githubusercontent.com/0x5A65726F677275/bxxx/main/install.s
 ## Usage Examples 💡
 ### Basic conversion
 ```bash
-       Convert hex string to big-endian:
-              bxxx '89 --reverse-endian (Result: 0x22f61988)
+aov@ArtOfVector-Lab:~$ bxxx --help
+usage: bxxx [-h] [--char] [--hex] [--dec] [--oct] [--big] [--little] [--reverse-endian] value
 
-       Convert hex to ASCII:
-              bxxx 0x48656c6c6f --char (Result: Hello)
+bxxx - Advanced Hex Converter (Art of Vector)
 
-       Convert decimal to little-endian hex:
-              bxxx 586553736 --hex --little
+positional arguments:
+  value             Input value (0x hex, decimal, or \x hex string)
+
+options:
+  -h, --help        show this help message and exit
+  --char            ASCII output (big-endian)
+  --hex             Hex output (default: big-endian)
+  --dec             Decimal output
+  --oct             Octal output
+  --big             Big-endian output (default)
+  --little          Little-endian output
+  --reverse-endian  Convert \x little-endian to 0x big-endian
+
+Example: bxxx '\x88\x19\xf6\x22' --reverse-endian → 0x22f61988
 ```
 
 # View full documentation
