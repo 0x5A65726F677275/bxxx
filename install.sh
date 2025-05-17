@@ -1,12 +1,12 @@
 #!/bin/bash
-# bxxx installer v1.2 - Byte Sequence Generator (bxxx) 1.3v
+# bxxx installer v1.2 - Byte Sequence Generator (bxxx) 1.2v
 # Copyright (c) 2025 Art of Vector
 # License: MIT License (https://opensource.org/licenses/MIT)
 # Install: curl -sSL https://raw.githubusercontent.com/0x5A65726F677275/bxxx/main/install.sh | sudo bash
 
 set -e
 
-VERSION="1.3"
+VERSION="1.2"
 INSTALL_DIR="/usr/local/bin"
 MAN_DIR="/usr/local/share/man/man1"
 
@@ -107,7 +107,7 @@ EOF
 
 # Install the man page
 cat > "${MAN_DIR}/bxxx.1" << 'EOF'
-.TH BXXX 1 "2025-05-17" "bxxx v1.3" "Byte Sequence Generator"
+.TH BXXX 1 "2025-05-17" "bxxx v1.2" "Byte Sequence Generator"
 .SH NAME
 bxxx \- Advanced Byte Sequence Generator
 .SH SYNOPSIS
