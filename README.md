@@ -1,7 +1,7 @@
 # Byte Sequence Generator (bxxx) 1.2v 🛠️
 ![Banner](image/1.1v.png)
 
-![License](https://img.shields.io/badge/License-mit-blue)
+![License](https://img.shields.io/badge/License-MIT-blue)
 ![Python](https://img.shields.io/badge/Python-3.6+-blue)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20|%20macOS-lightgrey)
 
