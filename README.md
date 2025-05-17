@@ -23,25 +23,15 @@ curl -sSL https://raw.githubusercontent.com/0x5A65726F677275/bxxx/main/install.s
 ## Usage Examples 💡
 ### Basic conversion
 ```bash
-aov@ArtOfVector-Lab:~$ bxxx --help
-usage: bxxx [-h] [--char] [--hex] [--dec] [--oct] [--big] [--little] [--reverse-endian] value
+Installed bxxx v1.2
+Copyright (c) 2025 Art of Vector - MIT License
+Usage examples:
+  bxxx '\x88\x19\xf6\x22' --reverse-endian  # 0x22f61988
+  bxxx '0x8819f622' --reverse-endian         # 0x22f61988
+  bxxx '48656c6c6f' --char                  # Hello
+  bxxx 12345 --hex --little                 # Little-endian output
 
-bxxx - Advanced Hex Converter (Art of Vector)
-
-positional arguments:
-  value             Input value (0x hex, decimal, or \x hex string)
-
-options:
-  -h, --help        show this help message and exit
-  --char            ASCII output (big-endian)
-  --hex             Hex output (default: big-endian)
-  --dec             Decimal output
-  --oct             Octal output
-  --big             Big-endian output (default)
-  --little          Little-endian output
-  --reverse-endian  Convert \x little-endian to 0x big-endian
-
-Example: bxxx '\x88\x19\xf6\x22' --reverse-endian → 0x22f61988
+Manual page installed. View with: man bxxx
 ```
 
 # View full documentation
