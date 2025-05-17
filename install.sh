@@ -101,7 +101,7 @@ EOF
 
 chmod +x "${INSTALL_DIR}/bxxx"
 echo "Installed bxxx v${VERSION}"
-echo "Copyright (c) 2024 Art of Vector - MIT License"
+echo "Copyright (c) 2025 Art of Vector - MIT License"
 echo "Usage examples:"
 echo "  bxxx '\\x88\\x19\\xf6\\x22' --reverse-endian  # 0x22f61988"
 echo "  bxxx 0x48656c6c6f --char    # Hello"
