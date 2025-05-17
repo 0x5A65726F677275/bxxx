@@ -23,22 +23,27 @@ curl -sSL https://raw.githubusercontent.com/0x5A65726F677275/bxxx/main/install.s
 ## Usage Examples 💡
 # Basic conversion
 ```bash
-bxxx 0x414243  # Output: \x41\x42\x43
+aov@ArtOfVector-Lab:~$ bxxx --help
+usage: bxxx [-h] [--char] [--hex] [--dec] [--oct] [--big] [--little] [--reverse-endian] value
+
+bxxx - Advanced Hex Converter (Art of Vector)
+
+positional arguments:
+  value             Input value (0x hex, decimal, or \x hex string)
+
+options:
+  -h, --help        show this help message and exit
+  --char            ASCII output (big-endian)
+  --hex             Hex output (default: big-endian)
+  --dec             Decimal output
+  --oct             Octal output
+  --big             Big-endian output (default)
+  --little          Little-endian output
+  --reverse-endian  Convert \x little-endian to 0x big-endian
+
+Example: bxxx '\x88\x19\xf6\x22' --reverse-endian → 0x22f61988        # Displays "101"
 ```
-# Fixed length conversion
-```bash
-bxxx -b 8 0xdeadbeef  # Output: \xef\xbe\xad\xde\x00\x00\x00\x00
-```
-# Keep null bytes
-```bash
-bxxx -k 0x1234  # Output: \x34\x12
-```
-# Added multiple output formats (--hex, --dec, --oct, --char)
-```bash
-bxxx --char 0x48656c6c6f    # Outputs "Hello"
-bxxx --dec 0xff             # Shows "255"
-bxxx --oct 0x41             # Displays "101"
-```
+
 # View full documentation
 ```bash
 man bxxx
