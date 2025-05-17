@@ -1,5 +1,5 @@
 # Byte Sequence Generator (bxxx) 1.2v 🛠️
-![Banner](image/1.1v.png)
+![Banner](image/1.2v.png)
 
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Python](https://img.shields.io/badge/Python-3.6+-blue)
