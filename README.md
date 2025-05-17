@@ -21,7 +21,7 @@ curl -sSL https://raw.githubusercontent.com/0x5A65726F677275/bxxx/main/install.s
 ```
 
 ## Usage Examples 💡
-# Basic conversion
+### Basic conversion
 ```bash
 aov@ArtOfVector-Lab:~$ bxxx --help
 usage: bxxx [-h] [--char] [--hex] [--dec] [--oct] [--big] [--little] [--reverse-endian] value
